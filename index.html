@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Compiler</title>
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+
+            <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        </head>
+        <body>
+            <header>
+                <h2>Online Compiler</h2>
+
+                <ul class="Navbar_links">
+                    <li id="li_drpdown">
+                        <label class="dropdown" for="language">Select language : </label>
+
+                            <select name="language" onchange="changeLanguage()">
+
+                                <option value="C">C</option>
+                                <option value="C++">C++</option>
+                                <option value="Java" selected>Java</option>
+
+                            </select>
+                    </li>
+
+                    <li>
+                        <button type="button" onclick="executeCode()"><i class='bx bx-play'></i></button>
+                    </li>
+                </ul>
+            </header>
+
+            <div class="code_editor">
+                <textarea>Write your code here...</textarea>
+                <iframe></iframe>
+            </div>
+
+
+            <link rel="stylesheet" href="js/ide.js">
+        </body>
+</html>

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #24252A;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    font-weight: 500;
+    color: #4da7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    transition: 0.5s;
+}
+header:hover {
+    background-color: rgba(77, 167, 235,0.8);
+    color: #fff;
+}
+header h2{
+    cursor: pointer;
+    margin-left: 15px;
+}
+.Navbar_links{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 300px;
+    margin-right: 15px;
+}
+select{
+    height: 30px;
+    width: 75px;
+    border-radius: 5px;
+    color: black;
+    background-color: #fff;
+}
+.Navbar_links button{
+    height: 39px;
+    width: 39px;
+    border-radius: 25px;
+    border: 3px solid #FFF;
+    font-size: 25px;
+    text-align: center;
+    padding: 5px;
+    margin-right: 20px;
+    margin-top: -5px;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: rgb(87, 86, 86);
+    color: white;
+    animation: pulsate 1s ease-in-out;
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow: 0 0 10px #FFF,
+        0 0 50px darkblue;
+    }
+}
+
+.code_editor{
+    position: fixed;
+    padding: 5px;
+}
+textarea{
+    padding: 10px;
+    min-height: 530px;
+    max-height: 530px;
+    min-width: 780px;
+    max-width: 780px;
+}
+iframe{
+    height: 530px;
+    width: 470px;
+    border: 2px solid wheat;
+}
+
+@media only screen and (max-width:700px) {
+    header{
+        width: 412px;
+    }
+    header h2{
+        font-size: 15px;
+    }
+    .Navbar_links{
+        font-size: 10px;
+    }
+    .Navbar_links select{
+        height: 20px;
+        width: 60px;
+    }
+    .Navbar_links button{
+        height: 29px;
+        width: 29px;
+        font-size: 16.5px;
+        text-align: center;
+        padding: 5px;
+        margin-right: 20px;
+        margin-top: -5px;
+        cursor: pointer;
+        background-color: #fff;
+        color: black;;
+    }
+    button:hover{
+        background-color: rgb(87, 86, 86);
+        color: white;
+        animation: pulsate 1s ease-in-out;
+    }
+    
+    @keyframes pulsate {
+        0% {
+            box-shadow: 0 0 10px #FFF,
+            0 0 50px darkblue;
+        }
+    }
+    .code_editor{
+        margin-top: 30px;
+        padding: 5px;
+        width: 412px;
+    }
+    .code_editor textarea{
+        padding: 10px;
+        min-height: 385px;
+        max-height: 385px;
+        min-width: 400px;
+        max-width: 400px;
+    }
+    iframe{
+        height: 200px;
+        width: 400px;
+        border: 2px solid wheat;
+    }
+
+}
